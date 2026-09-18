@@ -2,10 +2,6 @@ import sqlite3, pathlib
 import pandas as pd
 import matplotlib.pyplot as plt
 
-ROOT = pathlib.Path(__file__).resolve().parents[1]
-DB = ROOT / "northwind.db"
-OUT = ROOT / "outputs"
-OUT.mkdir(exist_ok=True)
 
 def q(conn, sql):
     return pd.read_sql_query(sql, conn)
