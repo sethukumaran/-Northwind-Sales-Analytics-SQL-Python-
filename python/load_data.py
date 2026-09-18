@@ -1,7 +1,5 @@
 import sqlite3, pandas as pd, pathlib
 
-DATA = pathlib.Path(__file__).resolve().parents[1] / "data" / "Live_file_data.xlsx"
-DB = pathlib.Path(__file__).resolve().parents[1] / "northwind.db"
 
 def build_database():
     xls = pd.ExcelFile(DATA)
