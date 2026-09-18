@@ -1,4 +1,3 @@
--- analysis_queries.sql
 -- 1. Overall KPIs
 SELECT COUNT(DISTINCT o.OrderID) AS total_orders,
        ROUND(SUM(od.UnitPrice * od.Quantity * (1 - od.Discount)),2) AS revenue,
